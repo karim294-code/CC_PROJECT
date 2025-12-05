@@ -1,0 +1,116 @@
+/* --------------------------------------------------
+   GLOBAL PAGE STYLING
+   Animated light-blue background and base text styling
+-------------------------------------------------- */
+body {
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+
+  /* Soft animated blue gradient */
+  background: linear-gradient(135deg, #dff3ff, #e0f2ff, #f0faff);
+  background-size: 300% 300%;
+  animation: bgShift 10s ease infinite;
+
+  color: #2a3a4a; /* Dark blue text */
+}
+
+/* Background animation (moves the gradient slowly) */
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* --------------------------------------------------
+   HEADER / HERO SECTION
+   Large title + navigation bar
+-------------------------------------------------- */
+.hero {
+  background: #6ec6ff;      /* Sky blue header */
+  color: white;             /* White text */
+  padding: 40px 20px;       /* Space around content */
+  text-align: center;
+  border-bottom: 5px solid #40a6e6; /* Slightly darker blue stripe */
+}
+
+.hero h1 {
+  margin: 0 0 15px;
+  font-size: 2.5rem;        /* Big title font */
+  letter-spacing: 2px;      /* Slight spacing for style */
+}
+
+/* Navigation links inside header */
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;   /* No underline by default */
+  font-weight: bold;
+}
+
+/* Underline when hovering over menu links */
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* --------------------------------------------------
+   MAIN GRID LAYOUT
+   Controls spacing between page sections
+-------------------------------------------------- */
+main.grid {
+  display: grid;  /* Enables CSS Grid */
+  gap: 20px;      /* Space between cards */
+  padding: 20px;
+}
+
+
+/* --------------------------------------------------
+   CARD COMPONENT
+   White rounded content boxes with a blue shadow
+-------------------------------------------------- */
+.card {
+  background: white;                      /* White card background */
+  border-radius: 14px;                    /* Rounded corners */
+  padding: 22px;                           /* Inner space */
+  box-shadow: 0 4px 18px rgba(0, 90, 150, 0.15); /* Soft blue shadow */
+  transition: transform 0.25s, box-shadow 0.25s; /* Smooth hover animation */
+}
+
+/* Lift card upward slightly on hover */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 90, 150, 0.25);
+}
+
+
+/* --------------------------------------------------
+   LINKS INSIDE CARDS & ASSIGNMENT LISTS
+-------------------------------------------------- */
+.assignments a,
+.card a {
+  color: #0077cc;        /* Medium blue links */
+  text-decoration: none;
+  font-weight: 600;       /* Slightly bolder */
+}
+
+/* Underline appears only when hovering */
+.assignments a:hover,
+.card a:hover {
+  text-decoration: underline;
+}
+
+
+/* --------------------------------------------------
+   FOOTER
+   Small transparent footer at bottom of page
+-------------------------------------------------- */
+footer {
+  background: rgba(255, 255, 255, 0.5); /* Frosted-white strip */
+  text-align: center;
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(4px);           /* Soft blur effect */
+  border-top: 1px solid rgba(255,255,255,0.7);
+}
