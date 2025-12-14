@@ -7,7 +7,7 @@ body {
   font-family: 'Poppins', serif;
 
   /* Soft animated blue gradient */
-  background: linear-gradient(135deg, #dff3ff, #e0f2ff, #f0faff);
+  background: linear-gradient(135deg, #bea1d4, #d9b3ff, #d78af3);
   background-size: 300% 300%;
   animation: bgShift 10s ease infinite;
 
@@ -31,13 +31,26 @@ body {
   color: white;             /* White text */
   padding: 40px 20px;       /* Space around content */
   text-align: center;
-  border-bottom: 5px solid #40a6e6; /* Slightly darker blue stripe */
+  border-bottom: 5px solid #a77dd9; /* Slightly darker blue stripe */
 }
 
 .hero h1 {
   margin: 0 0 15px;
   font-size: 2.5rem;        /* Big title font */
   letter-spacing: 2px;      /* Slight spacing for style */
+}
+.headerbackground {
+  background: #a77dd9;      /* lilac header */
+  color: white;             /* White text */
+  padding: 40px 20px;       /* Space around content */
+  text-align: center;
+  border-bottom: 5px solid #a77dd9; /* Slightly darker blue stripe */
+  background-image: url('Abstract.jpg');
+  height: 300px;
+  
+}
+
+
 }
 
 /* Navigation links inside header */
@@ -70,7 +83,7 @@ main.grid {
    White rounded content boxes with a blue shadow
 -------------------------------------------------- */
 .card {
-  background: white;                      /* White card background */
+  background: white;                      /* white background */
   border-radius: 14px;                    /* Rounded corners */
   padding: 22px;                           /* Inner space */
   box-shadow: 0 4px 18px rgba(0, 90, 150, 0.15); /* Soft blue shadow */
@@ -89,16 +102,12 @@ main.grid {
 -------------------------------------------------- */
 .assignments a,
 .card a {
-  color: #0077cc;        /* Medium blue links */
+  color: #000406;        /* Medium blue links */
   text-decoration: none;
   font-weight: 600;       /* Slightly bolder */
 }
 
-/* Underline appears only when hovering */
-.assignments a:hover,
-.card a:hover {
-  text-decoration: underline;
-}
+
 
 
 /* --------------------------------------------------
@@ -113,4 +122,22 @@ footer {
   font-size: 0.9rem;
   backdrop-filter: blur(4px);           /* Soft blur effect */
   border-top: 1px solid rgba(255,255,255,0.7);
+}
+.button {
+    background-color: #f3f5f7; /* white background */
+    color: rgb(10, 8, 8);              /* White text color */
+    padding: 10px 20px;        /* Space around the text */
+    border: black;              /* black border */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 16px;           /* Text size */
+    cursor: pointer;           /* Change mouse cursor to a hand pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;        /* Center the text */
+    text-decoration: none;     /* Remove underlines if using an <a> tag as a button */
+    display: inline-block;     /* Allows for width/height settings and margin */
+    margin: 4px 2px;           /* Space between buttons */
+}    
+
+.button:hover {
+    background-color: #bd82db; /* Light gray background on hover */
 }
