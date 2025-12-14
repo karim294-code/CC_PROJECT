@@ -4,7 +4,7 @@
 -------------------------------------------------- */
 body {
   margin: 0;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Poppins', serif;
 
   /* Soft animated blue gradient */
   background: linear-gradient(135deg, #dff3ff, #e0f2ff, #f0faff);
@@ -27,7 +27,7 @@ body {
    Large title + navigation bar
 -------------------------------------------------- */
 .hero {
-  background: #6ec6ff;      /* Sky blue header */
+  background: #a77dd9;      /* lilac header */
   color: white;             /* White text */
   padding: 40px 20px;       /* Space around content */
   text-align: center;
